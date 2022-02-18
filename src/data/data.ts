@@ -13,9 +13,15 @@ export type dataElem = {
 	value: string,
 }
 
+export type betterLinks = {
+	label: string,
+	description: string,
+	value: string,
+}
+
 export type linkGroup = {
 	title: string;
-	links: dataElem[];
+	links: betterLinks[];
 }
 
 /*
@@ -27,52 +33,158 @@ export type linkGroup = {
 */
 export const links: linkGroup[] = [
 	{
-		title: "Jawns",
+		title: "Web Dev",
 		links: [
 			{
-				label: "Gmail",
-				value: "https://mail.google.com/mail/u/0/#inbox",
+				label: "GitHub",
+				description: "The Source for Code",
+				value: "https://github.com/",
 			},
 			{
-				label: "GitHub Repos",
-				value: "https://github.com/sk33lz?tab=repositories",
+				label: "Drupal",
+				description: "Drupal.org",
+				value: "https://www.drupal.org/",
 			},
 			{
-				label: "Old Reddit",
-				value: "https://old.reddit.com/",
+				label: "GitLab",
+				description: "",
+				value: "https://gitlab.com/",
 			},
 			{
-				label: "YouTube",
-				value: "https://www.youtube.com",
+				label: "JSFiddle",
+				description: "",
+				value: "https://jsfiddle.net/",
 			},
 			{
-				label: "Twitter Trending",
-				value: "https://twitter.com/explore/tabs/trending",
+				label: "Web.dev",
+				description: "",
+				value: "https://web.dev/",
+			},
+			{
+				label: "Codepen",
+				description: "",
+				value: "https://codepen.io/pen/",
+			},
+			{
+				label: "Pastebin",
+				description: "",
+				value: "https://pastebin.com/",
+			},
+			{
+				label: "Stack Overflow",
+				description: "",
+				value: "https://stackoverflow.com/",
 			},
 		]
 	},
 	{
-		title: "Web Dev",
+		title: "Security",
+		links: [
+			{
+				label: "GRC Perfect Passwords",
+				description: "GRC Ultra High Security Password Generator",
+				value: "https://www.grc.com/passwords.htm",
+			},
+			{
+				label: "CISA Free Tools & Services",
+				description: "CISA Free Cybersecurity Tools & Services",
+				value: "https://www.cisa.gov/free-cybersecurity-services-and-tools",
+			},
+			{
+				label: "CISA Known Exploits Catalog",
+				description: "CISA Known Exploited Vulnerabilities Catalog",
+				value: "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+			},
+			{
+				label: "/r/cybersecurity",
+				description: "",
+				value: "https://old.reddit.com/r/cybersecurity/",
+			},
+			{
+				label: "StackEx: Infosec",
+				description: "StackExchange: Information Security",
+				value: "https://security.stackexchange.com/",
+			},
+			{
+				label: "OSV List",
+				description: "Open Source Vulnerabilities List",
+				value: "https://osv.dev/list",
+			},
+			{
+				label: "Drupal Security",
+				description: "",
+				value: "https://www.drupal.org/security",
+			},
+		]
+	},
+	{
+		title: "SEO",
 		links: [
 			{
 				label: "PageSpeed Insights",
+				description: "Google PageSpeed Insights",
 				value: "https://pagespeed.web.dev/",
 			},
 			{
-				label: "Google Analytics",
+				label: "Analytics",
+				description: "Google Analytics",
 				value: "https://analytics.google.com/",
 			},
 			{
-				label: "Poliigon",
-				value: "https://www.poliigon.com/",
+				label: "Search Console",
+				description: "Google Search Console",
+				value: "https://search.google.com/search-console",
 			},
 			{
-				label: "Blender tutorial",
-				value: "https://www.youtube.com/watch?v=NyJWoyVx_XI&list=PLjEaoINr3zgEq0u2MzVgAaHEBt--xLB6U",
+				label: "SEMRush",
+				description: "",
+				value: "https://www.semrush.com/",
 			},
 			{
-				label: "The other Blender tutorial",
-				value: "https://www.youtube.com/watch?v=bpvh-9H8S1g&list=PL8eKBkZzqDiU-qcoaghCz04sMitC1yx6k&index=1",
+				label: "GTMetrix",
+				description: "",
+				value: "https://gtmetrix.com/",
+			},
+			{
+				label: "Wayback Machine",
+				description: "",
+				value: "https://archive.org/web/",
+			},
+			{
+				label: "Title Tag Preview Tool",
+				description: "Moz Title Tag Preview Tool",
+				value: "https://moz.com/learn/seo/title-tag",
+			},
+			{
+				label: "DomainTools WHOIS",
+				description: "",
+				value: "https://whois.domaintools.com/",
+			},
+
+		]
+	},
+	{
+		title: "SEO News",
+		links: [
+			{
+				label: "Search Engine Land",
+				description: "",
+				value: "https://searchengineland.com/",
+			},
+			{
+				label: "Search Engine Journal",
+				description: "",
+				value: "https://www.searchenginejournal.com/",
+			},
+			{
+				label: "Google Search Central Tweets",
+				description: "",
+				value: "https://twitter.com/googlesearchc",
+			},
+			{
+				label: "Google Algorithm Update History",
+				description: "Moz Google Algorithm Update History",
+				value: "https://moz.com/google-algorithm-change",
 			},
 		]
 	},
@@ -81,77 +193,108 @@ export const links: linkGroup[] = [
 		links: [
 			{
 				label: "PixlrX",
+				description: "",
 				value: "https://pixlr.com/x/",
 			},
 			{
 				label: "AI Image Enlarger",
+				description: "",
 				value: "https://bigjpg.com/en",
 			},
 			{
 				label: "Img to Svg Converter",
+				description: "",
 				value: "https://picsvg.com/",
 			},
 			{
 				label: "Affinity",
+				description: "",
 				value: "https://affinity.serif.com/en-us/tutorials/designer/desktop/",
 			},
 			{
 				label: "Affinity - YT",
+				description: "",
 				value: "https://www.youtube.com/c/AffinityRevolution/playlists",
 			},
 		]
 	},
 	{
-		title: "Music",
+		title: "Dev Grooves",
 		links: [
 			{
-				label: "i wanna be a cowboy",
-				value: "https://www.youtube.com/watch?v=8zWz92f_HGs",
+				label: "Kraftwerk",
+				description: "",
+				value: "https://www.youtube.com/c/Kraftwerk",
 			},
 			{
-				label: "let the bodies hit the floor",
-				value: "https://www.youtube.com/watch?v=b--VKaCB9u0",
+				label: "Grateful Dead Live Collection",
+				description: "",
+				value: "https://archive.org/details/GratefulDead",
 			},
 			{
-				label: "Nobody Kanna Cross It",
-				value: "https://www.youtube.com/watch?v=2wqTnwJGvtc",
+				label: "Oakenfold Essential Mixes",
+				description: "Paul Oakenfold BBC Radio 1 Essential Mixes",
+				value: "https://soundcloud.com/pauloakenfold/sets/bbc-radio-1-essential-mixes",
 			},
 			{
-				label: "Smug Dancin",
-				value: "https://www.youtube.com/watch?v=eNZ9Od1jQ4Q",
+				label: "Paul van Dyk",
+				description: "",
+				value: "https://www.youtube.com/c/PaulvanDyk",
 			},
 			{
-				label: "Utamaru - The Sanctified Mind Cover",
-				value: "https://www.youtube.com/watch?v=MHlJKLlS07U",
+				label: "Khruangbin",
+				description: "",
+				value: "https://www.youtube.com/c/Khruangbin",
+			},
+			{
+				label: "YouTube Music",
+				description: "",
+				value: "https://music.youtube.com/",
+			},
+			{
+				label: "TIDAL",
+				description: "",
+				value: "https://listen.tidal.com/",
 			},
 		]
 	},
 	{
-		title: "Sauce",
+		title: "Cool Tools",
 		links: [
 			{
-				label: "Pictures - DeathAndMilk",
-				value: "https://www.instagram.com/deathandmilk_/",
+				label: "localtunnel",
+				description: "Serve a local port publically without opening ports in your firewall.",
+				value: "https://github.com/localtunnel/localtunnel",
 			},
 			{
-				label: "Icons - FontAwesome",
-				value: "https://fontawesome.com/icons",
+				label: "Lando",
+				description: "A local web development tool built using interlinked Docker containers.",
+				value: "https://lando.dev/",
 			},
 			{
-				label: "Text Flicker - CodeMyUI",
-				value: "https://codemyui.com/crt-screen-text-flicker-animation-in-pure-css/",
+				label: "pyTasker",
+				description: "Automate tasks on any operating system using Python.",
+				value: "https://pypi.org/project/pyTasker/",
 			},
 			{
-				label: "Wave Animation - mburakerman",
-				value: "https://codepen.io/mburakerman/pen/eRZZEv",
+				label: "Guerrilla Mail",
+				description: "Disposable Temporary Email Addresses",
+				value: "https://www.guerrillamail.com/inbox",
 			},
 			{
-				label: "Da real sauce ԅ(♡﹃♡ԅ)",
-				value: "https://www.youtube.com/watch?v=qr89xoZyE1g",
+				label: "Smush.it",
+				description: "",
+				value: "https://www.imgopt.com/",
 			},
 			{
-				label: "Even more real sauce ( ͡° ͜ʖ ͡°)",
-				value: "https://www.youtube.com/watch?v=VLhJOd_TFiI",
+				label: "reSmush.it",
+				description: "",
+				value: "https://resmush.it/",
+			},
+			{
+				label: "DNSdumpster",
+				description: "Domain research tool",
+				value: "https://dnsdumpster.com/",
 			},
 		]
 	},

@@ -47,6 +47,7 @@ export const LinkContainer = () => {
                         tabIndex={active !== groupIndex ? -1 : undefined}
                         key={"LinkItem" + linkIndex}
                         href={link.value}
+                        title={link.description}
                     >
                         {link.label}
                     </LinkItem>
